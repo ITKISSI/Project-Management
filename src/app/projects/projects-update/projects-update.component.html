@@ -1,0 +1,38 @@
+
+
+<div class="col-xl-4 col-lg-5 col-md-7 mx-auto w-80">
+    <div class="card z-index-0">
+      <div class="card-header text-center pt-4">
+        <h5>Update a Project</h5>
+      </div>
+     
+      <div class="card-body">
+        <!-- add-project.component.html -->
+<form role="form">
+<div class="mb-3">
+<input type="number" class="form-control" placeholder="Id" aria-label="Id" [(ngModel)]="projet.Id" name="Id">
+</div>
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Libelle" aria-label="Libelle" [(ngModel)]="projet.Libelle" name="Libelle">
+</div>
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Description" aria-label="Description" [(ngModel)]="projet.Description" name="Description">
+</div>
+<div class="mb-3">
+<input type="number" class="form-control" placeholder="SprintDays" aria-label="SprintDays" [(ngModel)]="projet.SprintDays" name="SprintDays">
+</div>
+<div class="mb-3">
+<input type="date" class="form-control" placeholder="DateDebut" aria-label="DateDebut" [(ngModel)]="projet.DateDebut" name="DateDebut">
+</div>
+<div class="mb-3">
+<input type="date" class="form-control" placeholder="DateFin" aria-label="DateFin" [(ngModel)]="projet.DateFin" name="DateFin">
+</div>
+<div class="text-center">
+<button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2" (click)="update()">Update Project</button>
+</div>
+</form>
+
+      </div>
+    </div>
+  </div>
+
